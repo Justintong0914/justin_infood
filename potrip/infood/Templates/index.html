@@ -1,0 +1,519 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+<head>
+<link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
+<link href="infood.css" rel="stylesheet">
+<style>
+    :root {
+    --tryy:{{topp1}}%;
+    --tryy1:{{topp2}}%;
+    --tryy2:{{topp3}}%;
+    }
+    li{
+        font-size: 17px;
+        margin:20px;
+        text-align:center;
+        font-family: system-ui;
+        font-weight: bold;
+        
+        
+    }
+    a{
+        color: 			#004B97;
+        text-decoration:none;
+    }
+    a:hover{
+        font-size: 25px;
+    }
+    .top{
+    background-color:#FFFFFF;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+}
+.top1{
+    width:15%;
+    height: 60px;
+    float: left;
+    text-align:center;
+    border-bottom:2px #D0D0D0 solid;
+    
+    
+}
+.top2{
+    width: 85%;
+    height: 60px;
+    float: left;
+    position: relative;
+    border-bottom:2px #D0D0D0 solid;
+}
+.uu{
+    width: 100px ;
+    height: 60px;
+
+}
+.bo{
+    background-color:	#F0F0F0;
+    display: flex;
+    width: 100%;
+    height: 2000px; 
+}
+.bo1{
+    width: 14.59%;
+    height: 100%;
+    border-right:3px #D0D0D0 solid;
+    float: left;
+    background: -webkit-linear-gradient(left,#F0F0F0,	#E0E0E0);
+    background: -o-linear-gradient(right,	#F0F0F0,	#E0E0E0);
+    background: -moz-linear-gradient(right,	#F0F0F0,	#E0E0E0);
+    background: linear-gradient(to right,	#F0F0F0,	#E0E0E0);
+    margin-top: 55px;
+    list-style-type:none;
+    position: fixed;
+    
+    
+}
+.bo2{
+    background-color:	#FFFFFF;
+    width: 84.5%;
+    height: 2000px;
+    float: left;
+    margin-top:55px;
+    position: absolute;
+    left: 235px;
+
+    
+}
+.li1{
+    float: left;
+    list-style-type:none;
+    font-family: system-ui;
+    font-weight: bold;
+    text-align:center;
+    line-height:20px;
+     
+}
+.a1{
+    color: 	#5B5B5B;
+    font-size: 17px;
+}
+.a1:hover{
+    color:	#ADADAD;
+    font-size: 17px;
+}
+.h21{
+    color: 	#5B5B5B;
+    font-size: 15px;
+    font-family: system-ui;
+    font-weight: bold;
+    float: left;
+    top:8px;
+    left: 1105px;
+    position: absolute;
+}
+.main1{
+    width: 100%;
+    height: 400px;
+    border-bottom:3px 	#D0D0D0 solid;
+    display: flex;
+}
+#maina{
+    width:50%;
+    height: 400px;
+    float: left; 
+    border-right:3px 	#D0D0D0 solid;
+    position: relative;
+}
+.a-ph{
+    width: 540px;
+    height: 350px;
+    position: absolute;
+    margin: -4px 0px 0px 80px;
+}
+.b-ph{
+    width: 530px;
+    height: 350px;
+    position: absolute;
+    margin: -4px 0px 0px 95px;
+}
+#mainb{
+    width:50%;
+    height: 400px;
+    float: left; 
+}
+#main2{
+    width: 100%;
+    height: 330px;
+    position: relative;
+    display: flex;
+}
+.main2a{
+  width: 33.3%;
+  height: 330px;
+  float: left;
+ 
+}
+.main2b{
+    width: 33.3%;
+    height: 330px;
+    float: left;
+    
+}
+.main2c{
+    width: 33.3%;
+    height: 330px;
+    float: left;
+    
+}
+.main2d{
+    width: 33.3%;
+    height: 330px;
+    float: left;
+    
+}
+.main2e{
+    width: 33.3%;
+    height: 330px;
+    float: left;
+    
+}
+.main2f{
+    width: 33.3%;
+    height: 330px;
+    float: left;
+}
+.main3{
+    width: 100%;
+    height: 330px;
+    border-bottom:3px 	#D0D0D0 solid;
+    display: flex;
+    position: relative;
+}
+.c-ph{
+    width: 300px;
+    height: 250px;
+    position: absolute;
+    margin: 100px 0px 0px 90px;
+}
+.c-ph:hover{
+    width: 350px;
+    height: 300px;
+    position: absolute;
+    margin: 100px 0px 0px 90px;
+    transition:2s;
+    z-index: 5;
+}
+.d-ph{
+    width: 300px;
+    height: 250px;
+    position: absolute;
+    margin: 50px 0px 0px 90px;
+}
+.d-ph:hover{
+    width: 350px;
+    height: 300px;
+    position: absolute;
+    margin:  50px 0px 0px 90px;
+    transition:2s;
+    z-index: 5;
+}
+.main4{
+    width: 100%;
+    height: 380px;
+    border-bottom:3px 	#D0D0D0 solid;
+    display: flex;
+    position: relative;
+}
+#main4a{
+    width: 55%;
+    height: 380px;
+    border-right:3px 	#D0D0D0 solid;
+    float: left;
+}
+#main4b{
+    width: 45%;
+    height: 380px;
+    float: left;
+}
+.f-ph{
+    width: 430px;
+    height: 330px;
+    position: absolute;
+    margin: 0px 0px 0px 100px;
+}
+.main5{
+    width: 100%;
+    height: 700px;
+    border-bottom:3px 	#D0D0D0 solid;
+    position: relative;
+}
+#main5a{
+    width: 100%;
+    height: 700px;
+    border-right:3px 	#D0D0D0 solid;
+}
+.main6{
+    width: 100%;
+    height: 380px;
+    border-bottom:3px 	#D0D0D0 solid;
+    position: relative;
+    display: flex;
+}
+#main6a{
+    width: 45%;
+    height: 380px;
+    float: left;
+    border-right:3px 	#D0D0D0 solid;
+}
+#main6b{
+    width: 55%;
+    height: 380px;
+    float: left;
+}
+.g-ph{
+    width: 990px;
+    height: 700px;
+    position: absolute;
+    margin: -30px 0px 0px 150px;
+}
+.h-ph{
+    width: 500px;
+    height: 330px;
+    position: absolute;
+    margin: 0px 0px 0px 50px;
+}
+.i-ph{
+    width: 450px;
+    height: 350px;
+    position: absolute;
+    margin: -25px 0px 0px 150px;
+}
+.e-ph{
+    width: 450px;
+    height: 350px;
+    position: absolute;
+    margin: -25px 0px 0px 150px;
+}
+    .selec{
+    margin: -22px 0px 0px 185px;
+    position: absolute;
+    display: inline-block;
+    vertical-align: middle;
+    overflow: hidden;
+    background-color: #fff;
+	color: #555;
+    border: 1px solid #aaa;
+	text-shadow: none;
+	border-radius: 4px;	
+	transition: box-shadow 0.25s ease;
+	z-index: 2;
+    width:100px;
+}
+    .select:hover {
+		box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+	}
+
+	.select:before {
+		content: "";
+		position: absolute;
+		width: 0;
+		height: 0;
+		border: 10px solid transparent;
+		border-top-color: #ccc;
+		top: 14px;
+		right: 10px;
+		cursor: pointer;
+		z-index: -2;
+	}
+	.select select {
+		cursor: pointer;
+		padding: 10px;
+		width: 100%;
+		border: none;
+		background: transparent;
+		background-image: none;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+	}
+
+	.select select:focus {
+		outline: none;
+	}
+.ININ{
+    margin: -24px 0px 0px 290px;
+    position: absolute;
+    border: 1px solid #aaa;
+	text-shadow: none;
+	border-radius: 4px;	
+	transition: box-shadow 0.25s ease;
+}
+* {box-sizing: border-box}
+
+.container {
+  width: 90%;
+  background-color: #ddd;
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+}
+
+.skills {
+  text-align: right;
+  padding-top: 25px;
+  padding-bottom: 10px;
+  color: white;
+  
+}
+.ppppp{
+    margin-left: 30px;
+}
+
+.html {width: var(--tryy); background-color: #04AA6D;animation-name: htmle; animation-duration: 4s;}
+@keyframes htmle {
+    0%{width: 0%;}
+    100%{width: var(--tryy);}
+}
+.css {width: var(--tryy1); background-color: #2196F3;animation-name: csse; animation-duration: 4s;}
+@keyframes csse {
+    0%{width: 0%;}
+    100%{width: var(--tryy1);}
+}
+.js {width: var(--tryy2); background-color: #f44336;animation-name: javae; animation-duration: 4s;}
+@keyframes javae {
+    0%{width: 0%;}
+    100%{width: var(--tryy2);}
+}
+.mark{
+    width: 20px;
+    height: 20px;
+    margin:-22.5px 0px 0px 140px ;
+    float: left;
+    z-index: 100;
+    position: relative;
+    
+}
+</style>
+
+</head>
+
+<header class="top">
+<div class="top1"><img class="uu" src="{% static 'uu.png' %}" ></div>
+<div class="top2">
+    <li class="li1"><a class="a1" href="#">Data Analysis</a></li>
+    <li class="li1"><a class="a1" href="#">Contact Us</a></li>
+    <p class="h21">哈嘎灣部落產業促進協會</p>
+</div>
+</header>
+<body>
+<div class="bo">
+<nav class="bo1">
+    <li><a href="#maina">年齡購買商品</a></li>
+    <li><a href="#mainb">職業購買商品</a></li>
+    <li><a href="#main2">商品回購次數</a></li>
+    <li><a href="#main4a">商品購買關聯</a></li>
+    <li><a href="#main4b">InFood使用情況</a></li>
+    <li><a href="#main5a">月份熱門商品</a></li>
+    <li><a href="#main6a">多數過期食品</a></li>
+    <li><a href="#main6b">銷售通路分析</a></li>
+</nav>
+<div class="bo2">
+   <div class="main1">
+       <div id="maina">
+        <h3 style="margin:20px 0px 0px 20px">年齡購買商品</h3>
+        <img class="mark" src="{% static 'exclamation-mark.png' %}" title="針對不同年齡層之消費者進行消費分析">
+         <img class="a-ph" src="{{context3}}" alt="">
+       </div>
+       <div id="mainb">
+        <h3 style="margin:20px 0px 0px 20px">職業購買商品</h3>
+        <img class="mark" src="{% static 'exclamation-mark.png' %}" title="針對不同職業之消費者進行消費分析">
+           <img class="b-ph" src="{{context2}}" alt="">
+       </div>
+   </div>
+   <div id="main2">
+       <div class="main2a"> <h4 style="margin:20px 0px 0px 20px">商品回購次數</h4><img class="mark" style=" margin:-20px 0px 0px 130px ;"  src="{% static 'exclamation-mark.png' %}" title="針對有效訂單，對每一項商品進行回購率分析">
+        
+        <img class="c-ph" style="margin: 60px 0px 0px 100px;" src="{{context1}}" alt=""></div>
+       <div class="main2b">  <img class="c-ph" src="{{context4}}" alt=""></div>
+       <div class="main2c">  <img class="c-ph" src="{{context5}}"" alt=""></div>
+   </div>
+   <div class="main3">
+    <div class="main2d">  <img class="d-ph" src="{{context6}}"" alt=""></div>
+    <div class="main2e"> <img class="d-ph" src="{{context7}}"" alt=""></div>
+    <div class="main2f">  <img class="d-ph" src="{{context8}}"" alt=""></div>
+   </div>
+   <div class="main4">
+    <div id="main4a">
+     <h3 style="margin:20px 0px 0px 20px">商品購買關聯</h3>
+     <img class="mark" style="margin:-23px 0px 0px 140px ;" src="{% static 'exclamation-mark.png' %}" title="在設定之支持度以及信賴度下，對熱門商品進行關聯商品的提升度分析比較，提升度越高代表同時被購買機率越高">
+     <form method="post" action="/infood/">
+     {% csrf_token %}
+     <select class="selec" name="select"> 
+        <option> 選擇欲查詢商品 </option>
+         <option> {{top1}} </option>
+         <option> {{top2}} </option>
+         <option> {{top3}} </option>
+         <option> {{top4}} </option>
+         <option> {{top5}} </option>   
+         <option> {{top6}} </option>  
+         <option> {{top7}} </option>  
+         <option> {{top8}} </option>  
+         <option> {{top9}} </option>  
+         <option> {{top10}} </option>  
+    </select>
+    <input class="ININ" type="submit" value="查詢"> 
+    </form>
+    <p class="ppppp" style="color: #004B97;font-size: 20px;"> 與 <b>{{select}}</b> 有關聯性之商品</p>
+    {% if topq1 is not none  %}
+    <p class="ppppp"> {{topq1}} </p>
+    <div class="container">
+      <div class="skills html"></div>
+    </div>
+    {% endif %}
+    {% if topq2 is not none  %}
+    <p class="ppppp">{{topq2}}</p>
+    <div class="container">
+      <div class="skills css"></div>
+    </div>
+    {% endif %}
+    {% if topq3 is not none  %}
+    <p class="ppppp">{{topq3}}</p>
+    <div class="container">
+      <div class="skills js"></div>
+    </div>
+    {% endif %}
+    </div>
+    <div id="main4b">
+     <h3 style="margin:20px 0px 0px 20px">Infood使用狀況</h3>
+     <img class="mark" style="margin:-23px 0px 0px 160px ;"  src="{% static 'exclamation-mark.png' %}" title="分析每間合作商家之消費者對In-Food的使用情況">
+        <img class="f-ph" src="{{context}}" >
+    </div>
+</div>
+<div class="main5">
+    <div id="main5a">
+     <h3 style="margin:20px 0px 0px 20px">月份熱門商品</h3>
+     <img class="mark" src="{% static 'exclamation-mark.png' %}" title="依照使用者使用狀況，分析出當月熱門商品">
+         <img class="g-ph" src="{{image_64}}" >
+    </div>
+</div>
+<div class="main6">
+    <div id="main6a">
+        <h3 style="margin:20px 0px 0px 20px">過期商品排行</h3>
+        <img class="mark" src="{% static 'exclamation-mark.png' %}" title="針對消費者使用行為進行分析，列出消費者最容易放置過期之十大商品">
+        <img class="h-ph" src="{{image_65}}" >
+       </div>
+    <div id="main6b">
+        <h3 style="margin:20px 0px 0px 20px"></h3>
+        <h3 style="margin:20px 0px 0px 20px">銷售通路分析</h3>
+        <img class="mark" src="{% static 'exclamation-mark.png' %}" title="針對消費者的消費模式進行分析，比較出產品銷售的最佳途徑">
+        <img class="i-ph" src="{{contextc66}}" >
+    </div>
+</div>
+</div>
+</div>
+</body>
+</html>
